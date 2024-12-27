@@ -6,9 +6,10 @@ function GoodsIntem(props) {
         offerId,
         displayName,
         displayDescription,
-        price:{regularPrice},
+        price: {regularPrice},
         displayAssets,
         section,
+        addToBasket = Function.prototype,
     } = props;
 
 
@@ -17,14 +18,19 @@ function GoodsIntem(props) {
             <img
                 src={displayAssets[0]?.url}
                 loading="lazy"
-                alt={displayName} />
+                alt={displayName}/>
         </div>
         <div className="card-content">
             <span className="card-title">{displayName || section?.name}</span>
             <p>{displayDescription || section?.category}</p>
         </div>
         <div className="card-action">
-            <button className="btn">Купить</button>
+            <button className="btn" onClick={() => addToBasket({
+                offerId,
+                name:displayName || section?.name,
+                price: {regularPrice}
+            })}>Купить
+            </button>
             <span className="right" style={{fontSize: '1.8rem'}}>
           {regularPrice} руб.
         </span>
