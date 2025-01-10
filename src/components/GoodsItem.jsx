@@ -1,7 +1,7 @@
 import React from 'react';
 import {Preloader} from "./Preloader";
 
-function GoodsIntem(props) {
+function GoodsItem(props) {
     const {
         offerId,
         displayName,
@@ -29,6 +29,7 @@ function GoodsIntem(props) {
                 offerId,
                 name:displayName || section?.name,
                 price: {regularPrice}
+
             })}>Купить
             </button>
             <span className="right" style={{fontSize: '1.8rem'}}>
@@ -38,4 +39,4 @@ function GoodsIntem(props) {
     </div>
 }
 
-export {GoodsIntem};
+export {GoodsItem};
