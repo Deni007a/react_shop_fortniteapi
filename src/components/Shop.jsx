@@ -46,6 +46,30 @@ function Shop() {
     }
 
 
+    const incQuantity = (offerId) => {
+
+        const index = order.findIndex(obj => obj.offerId === offerId);
+
+        let x = order[index].quantity += 1;
+        setOrder(order => [...order]);
+    };
+
+    const decQuantity = (offerId) => {
+        const newOrder = order.map(el => {
+            if (el.offerId === offerId) {
+                const newQuantity = el.quantity - 1;
+                return {
+                    ...el,
+                    quantity: newQuantity >= 0 ? newQuantity : 0,
+                };
+            } else {
+                return el;
+            }
+        });
+        setOrder(newOrder);
+    }
+
+
     useEffect(function getGoods() {
         fetch(
             API_URL, {headers: {'Authorization': API_KEY}})
@@ -65,11 +89,17 @@ function Shop() {
                 isBasketShow && <BasketList
                     order={order}
                     handleBasketShow={handleBasketShow}
-                    removeFromBasket={removeFromBasket}/>
+                    removeFromBasket={removeFromBasket}
+                    incQuantity={incQuantity}
+                    decQuantity={decQuantity}
+                />
             }
         </main>
     )
 
 }
+
+// Todo: прилепить значек гита
+// Todo: написать функия добавлени и отнимания товара в корзине
 
 export {Shop}
