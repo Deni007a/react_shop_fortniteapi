@@ -4,7 +4,7 @@ import {GoodsItem} from "./GoodsItem";
 function GoodsList(props) {
     const {goods = [], addToBasket = Function.prototype} = props;
     if (!goods.length) {
-        return <h3>Товары не найденны</h3>
+        return <h3>Товары не найдены</h3>
     }
 
 

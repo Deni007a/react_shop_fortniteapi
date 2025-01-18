@@ -4,7 +4,7 @@ function BasketItem(props) {
   console.log(props)
   const {
     offerId,
-    displayName,
+    //displayName,
     price: {regularPrice},
     name,
     quantity,

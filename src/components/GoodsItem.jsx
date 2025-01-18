@@ -1,5 +1,5 @@
 import React from 'react';
-import {Preloader} from "./Preloader";
+
 
 function GoodsItem(props) {
     const {
