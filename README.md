@@ -1,7 +1,7 @@
 
 ## API
 
- запуск [этого проэкта] (https://deni007a.github.io/react_shop_fortniteapi/)
+ запуск [этого проэкта](https://deni007a.github.io/react_shop_fortniteapi/)
 
 FortniteApi.io для работы [FortniteApi](https://FortniteApi.io)!
 
