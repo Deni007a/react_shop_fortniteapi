@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react_shop_fortniteapi/static/css/main.7a7c231f.css",
+    "main.js": "/react_shop_fortniteapi/static/js/main.46ed33b1.js",
+    "static/js/453.6cf50fc1.chunk.js": "/react_shop_fortniteapi/static/js/453.6cf50fc1.chunk.js",
+    "static/media/GitHub_Logo_White.png": "/react_shop_fortniteapi/static/media/GitHub_Logo_White.6149aa5ccbc036755594.png",
+    "index.html": "/react_shop_fortniteapi/index.html",
+    "main.7a7c231f.css.map": "/react_shop_fortniteapi/static/css/main.7a7c231f.css.map",
+    "main.46ed33b1.js.map": "/react_shop_fortniteapi/static/js/main.46ed33b1.js.map",
+    "453.6cf50fc1.chunk.js.map": "/react_shop_fortniteapi/static/js/453.6cf50fc1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a7c231f.css",
+    "static/js/main.46ed33b1.js"
+  ]
+}
